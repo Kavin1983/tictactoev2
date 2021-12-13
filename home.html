@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tic Tac Toe</title>
+  </head>
+  <body>
+    <header>
+      <h1>Tic Tac Toe</h1>
+      <button class="btn-player-1 green">1 player</button>
+      <button class="btn-player-2">2 player</button>
+    </header>
+    <main>
+      <div class="bc-gradient"></div>
+      <div class="settingsbar">
+        <span class="winning-message none"></span>
+        <span class="turn">Turn: X</span>
+
+        <div class="scores">
+          <span class="x-score">x: 0</span>
+          <span class="o-score">o: 0</span>
+        </div>
+
+        <div>
+          <a class="newGame" href="/">New Game</a>
+        </div>
+      </div>
+      <div class="board">
+        <div class="board__row">
+          <div class="board__box" data-box-num="0"></div>
+          <div class="board__box" data-box-num="1"></div>
+          <div class="board__box" data-box-num="2"></div>
+        </div>
+        <div class="board__row">
+          <div class="board__box" data-box-num="3"></div>
+          <div class="board__box" data-box-num="4"></div>
+          <div class="board__box" data-box-num="5"></div>
+        </div>
+        <div class="board__row">
+          <div class="board__box" data-box-num="6"></div>
+          <div class="board__box" data-box-num="7"></div>
+          <div class="board__box" data-box-num="8"></div>
+        </div>
+      </div>
+
+      <button class="reset down none">Reset</button>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
